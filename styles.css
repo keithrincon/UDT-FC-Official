@@ -1,0 +1,227 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  font-size: 100%;
+}
+
+:root {
+  /* colors */
+  /* --primary-100: #e2e0ff;
+  /*  */
+  --primary-200: #c89b35;
+  --primary-300: #8cc0f3;
+  --primary-400: #3e95ed;
+  --primary-500: #0542ae;
+  --primary-600: #006341;
+  --primary-700: #ffd700;
+  --primary-800: #c8102e;
+  --primary-900: #051b30;
+
+  /* grey */
+
+  --grey-100: #e5e5e5;
+  /* --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a; */
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts  */
+  --headingFont: 'Roboto', sans-serif;
+  --bodyFont: 'Nunito', sans-serif;
+  --smallText: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+/* Nav Bar  */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-center {
+  /* fluid (based on screen width) */
+  /* 90% of view width regardless */
+  max-width: 1120px;
+  width: 90vw;
+}
+.nav-header {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-header img {
+  width: 100px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-btn {
+  padding: 0.15rem 0.75rem;
+}
+.nav-btn i {
+  font-size: 1.25rem;
+  color: #0542ae;
+}
+.btn {
+  background-color: aqua;
+  border: #0542ae solid 3px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transform: 1s ease-out, visibility 1s;
+}
+.show-links {
+  height: 260px;
+}
+.nav-link {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.2px;
+  padding: 1rem 0;
+  border-top: 1px solid #0542ae;
+  transform: 1s ease-out, visibility 1s;
+}
+.nav-link:hover {
+  color: blueviolet;
+}
+@media screen and (min-width: 992px) {
+  .nav-btn {
+    display: none;
+  }
+  .navbar {
+    height: 6rem;
+  }
+  .nav-center {
+    display: flex;
+    align-items: center;
+  }
+  .nav-header {
+    height: auto;
+    margin-right: 2rem;
+  }
+  .nav-links {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-link {
+    padding: 0;
+    border-top: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+    margin: auto;
+  }
+}
+/* page */
+.page {
+  background-color: red;
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 2rem;
+  min-height: calc(100vh - (6rem + 15rem));
+}
+/* footer */
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+.footer-center {
+  max-width: 1120px;
+  width: 90vw;
+  height: 15rem;
+}
+
+.footer-header {
+  background-color: pink;
+  display: flex;
+  width: 1120px;
+
+  align-items: center;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex: 1;
+}
+.footer-left img {
+  width: 150px;
+}
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 2;
+}
+.footer-center p {
+  margin: 0px;
+}
+.footer-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+.footer-slogan {
+  font-size: 1.5rem;
+}
+.footer-copyright {
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+
+.footer-facebook {
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex: 1;
+}
+
+.footer-facebook svg {
+  width: 5rem;
+}
+
+/*  */
