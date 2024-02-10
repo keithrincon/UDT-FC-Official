@@ -119,14 +119,14 @@ html {
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding-top: 2rem;
-  min-height: calc(100vh - (6rem + 15rem));
+  padding-top: 1rem;
+  /* min-height: calc(100vh - (6rem + 15rem)); */
 }
 /* main */
 /* header */
 .hero {
   background-color: #e5e5e5;
-  height: 70vh;
+  height: 350px;
   margin-bottom: 2rem;
   border-radius: var(--borderRadius);
   display: flex;
@@ -204,7 +204,7 @@ html {
 /* Calendario */
 .calender-container {
   background-color: var(--grey);
-  height: 92vh;
+  height: 810px;
   margin-bottom: 2rem;
   border-radius: var(--borderRadius);
   display: flex;
@@ -302,7 +302,7 @@ html {
 /* volunteer container */
 .volunteer-container {
   background-color: var(--grey);
-  height: 38vh;
+  height: 330px;
   margin-bottom: 1rem;
   border-radius: var(--borderRadius);
   display: flex;
@@ -337,7 +337,7 @@ html {
 /* info container */
 .info-container {
   background-color: var(--grey);
-  height: 31vh;
+  height: 270px;
   margin-bottom: 1rem;
   border-radius: var(--borderRadius);
   display: flex;
@@ -371,7 +371,7 @@ html {
 /* Sponser Section */
 .sponser-container {
   background-color: var(--grey);
-  height: 65vh;
+  height: 570px;
   margin-bottom: 2rem;
   border-radius: var(--borderRadius);
   display: flex;
@@ -432,7 +432,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 13vh;
 }
 
 .footer-left img {
@@ -443,7 +442,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 0;
-  height: 13vh;
+  height: 120px;
   flex: 1;
 }
 .footer-title {
