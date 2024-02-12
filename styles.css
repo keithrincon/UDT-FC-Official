@@ -95,7 +95,7 @@ html {
   font-family: var(--headingFont);
 }
 .show-links {
-  height: 260px;
+  height: 256px;
 }
 .nav-link {
   display: block;
@@ -204,7 +204,7 @@ html {
 /* Calendario */
 .calender-container {
   background-color: var(--grey);
-  height: 810px;
+  height: 790px;
   margin-bottom: 2rem;
   border-radius: var(--borderRadius);
   display: flex;
@@ -302,7 +302,7 @@ html {
 /* volunteer container */
 .volunteer-container {
   background-color: var(--grey);
-  height: 330px;
+  height: 350px;
   margin-bottom: 1rem;
   border-radius: var(--borderRadius);
   display: flex;
@@ -332,6 +332,7 @@ html {
 }
 .volunteer-text {
   text-align: center;
+  width: 260px;
 }
 /* end of volunteer */
 /* info container */
@@ -366,12 +367,13 @@ html {
 }
 .info-text {
   text-align: center;
+  width: 260px;
 }
 /* End of Info Section */
 /* Sponser Section */
 .sponser-container {
   background-color: var(--grey);
-  height: 570px;
+  height: 560px;
   margin-bottom: 2rem;
   border-radius: var(--borderRadius);
   display: flex;
@@ -487,6 +489,12 @@ html {
   /* end of nav section */
 
   /* Header */
+
+  .hero {
+    height: 500px;
+    margin-bottom: 4rem;
+  }
+
   .hero-banner {
     height: 90px;
   }
@@ -508,11 +516,12 @@ html {
   /* End of Header */
 
   /* Calenderio */
+  .calender-container {
+    height: 900px;
+    margin-bottom: 4rem;
+  }
   .calender-banner h2 {
     font-size: 2rem;
-  }
-  .calender-container {
-    height: 104vh;
   }
   .calender-dates {
     grid-template-columns: 1fr 1fr;
@@ -535,7 +544,7 @@ html {
 
   /* volunteer container */
   .volunteer-container {
-    height: 29vh;
+    height: 270px;
   }
   .volunteer-box img {
     min-width: 360px;
@@ -548,7 +557,7 @@ html {
   .volunteer-text p,
   a {
     font-size: 1.3rem;
-    padding: 20px;
+    padding: 12px;
   }
   .volunteer-box {
     flex-direction: row;
@@ -558,7 +567,8 @@ html {
 
   /* info container */
   .info-container {
-    height: 29vh;
+    height: 270px;
+    margin-bottom: 4rem;
   }
   /* might have to specify by adding h2 below */
   .info-box img {
@@ -566,7 +576,7 @@ html {
     padding: 0 20px;
   }
   .info-banner h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .info-text p,
   a {
@@ -580,7 +590,8 @@ html {
   /* end of info container  */
   /* Sponser Container */
   .sponser-container {
-    height: 36vh;
+    height: 320px;
+    margin-bottom: 4rem;
   }
   .sponser-container h2 {
     font-size: 2rem;
@@ -600,6 +611,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    height: 150px;
   }
   .footer-left img {
     width: 7rem;
@@ -648,6 +660,11 @@ html {
     margin: auto;
   }
   /* Header */
+
+  .hero {
+    height: 600px;
+    margin-bottom: 5rem;
+  }
   .hero-banner {
     height: 110px;
   }
@@ -656,7 +673,6 @@ html {
     align-items: center;
     justify-content: end;
     font-size: 2rem;
-    font-weight: 500;
   }
 
   .banner-top-right h1 {
@@ -675,19 +691,37 @@ html {
 
   /* End of Header */
   .calender-container {
-    height: 66vh;
+    height: 580px;
   }
   .calender-dates {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 1px;
-    margin-bottom: 1.2rem;
   }
   .inner-box {
     font-size: 1.5rem;
     width: 205px;
   }
   .calender-btn {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 8px 16px;
+  }
+  .volunteer-box {
+    gap: 70px;
+  }
+  .volunteer-text {
+    width: 350px;
+  }
+  .volunteer-box img {
+    min-width: 390px;
+  }
+
+  .info-box {
+    gap: 70px;
+  }
+  .info-text {
+    width: 350px;
+  }
+  .info-box img {
+    min-width: 390px;
   }
 }
