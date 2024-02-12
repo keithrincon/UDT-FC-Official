@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="preguntas.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap"
       rel="stylesheet"
     />
+
     <title>pregunta</title>
   </head>
   <body>
@@ -38,9 +40,124 @@
     <!-- end of nav -->
     <!-- main -->
     <main class="page">
-      <h1>pregunta</h1>
+      <!-- Header -->
+      <div class="preguntas-page-container">
+        <h2 class="info-banner">Preguntas</h2>
+        <div class="w3-bar w3-black">
+          <button class="w3-bar-item w3-button" onclick="openCity('Registro')">
+            Registro
+          </button>
+          <button class="w3-bar-item w3-button" onclick="openCity('Juegos')">
+            Juegos y Practicas
+          </button>
+          <button class="w3-bar-item w3-button" onclick="openCity('Otro')">
+            Otro
+          </button>
+        </div>
+        <div id="Registro" class="city">
+          <div class="pregun-accor">
+            <button class="accordion">
+              ¿Cómo se determinan los grupos de edad?
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">¿Cuánto cuesta la inscripción?</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">
+              ¿Puedo solicitar que mis hijos jueguen en el mismo equipo?
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+            <button class="accordion">
+              ¿Puedo solicitar que mi hijo sea colocado con un determinado
+              jugador o con un determinado entrenador?
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+            <button class="accordion">¿Qué paga mi inscripción?</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+            <button class="accordion">
+              ¿Cuándo tendré noticias del entrenador de mi equipo?
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+            <button class="accordion">
+              ¿Puedo solicitar que mi hijo juegue en un grupo de edad diferente?
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="Juegos" class="city" style="display: none">
+          <div class="pregun-accor">
+            <button class="accordion">
+              ¿Cuándo comienza la temporada de primavera de 2024?
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">¿Qué día son las prácticas?</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">¿Qué día son los juegos?</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+            <button class="accordion">¿Dónde se juegan los juegos?</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+            <button class="accordion">
+              ¿Cuándo tendré noticias de mi entrenador?
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="Otro" class="city" style="display: none">
+          <div class="pregun-accor">
+            <button class="accordion">
+              Mi jugador nunca ha jugado antes, ¿qué equipamiento necesito?
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">¿Cuándo llegaré de mi entrenador?</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">
+              ¿Hay costo de entrada para los juegos?
+            </button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of header -->
     </main>
     <!-- end of main -->
+
     <!-- footer -->
     <footer class="main-footer">
       <div class="footer-center">
@@ -50,15 +167,11 @@
               <img src="assets/logos/logomain.png" alt="" />
             </a>
           </div>
-          <div class="footer-center">
-            <p class="footer-title">siguenos</p>
+          <div class="footer-middle">
+            <p class="footer-title">Siguenos</p>
             <p class="footer-slogan">#ElFutbolEsVida</p>
-            <p class="footer-copyright">
-              &copy; <span id="date"></span> Club Deportivo UDT. Todos los
-              derechos reservados.
-            </p>
           </div>
-          <div class="footer-facebook">
+          <div class="footer-right">
             <a href="https://www.facebook.com/ElFutbolesVidaUDT/?locale=es_LA">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <path
@@ -68,6 +181,10 @@
             </a>
           </div>
         </div>
+        <p class="footer-copyright">
+          &copy; <span id="date"></span> Club Deportivo UDT. Todos los derechos
+          reservados.
+        </p>
       </div>
     </footer>
   </body>

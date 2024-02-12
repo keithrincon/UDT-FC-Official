@@ -1,0 +1,161 @@
+/*  */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Handlee', cursive;
+}
+html {
+  font-size: 100%;
+}
+
+:root {
+  /* colors */
+  --grey: #e5e5e5;
+  --blue-ex-light: #8cc0f3;
+  --blue-light: #3e95ed;
+  --blue: #0542ae;
+  --blue-dark: #051b30;
+  --green: #006341;
+  --gold: #ffd700;
+  --gold-light: #c89b35;
+  --red: #c8102e;
+  --black: #222;
+  --white: #fff;
+
+  /* fonts  */
+  --headingFont: 'Roboto', sans-serif;
+  --bodyFont: 'Nunito', sans-serif;
+  --smallText: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.preguntas-page-container {
+  background-color: var(--grey);
+  height: 1460px;
+  margin-bottom: 2rem;
+  border-radius: var(--borderRadius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+.info-banner {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+/* .sponser-banner {
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--headingFont);
+} */
+
+/* .preguntas-section {
+  background-color: #d4d2d5;
+  text-align: center;
+  height: 1000px;
+  margin-bottom: 20px;
+  padding-bottom: 500px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+}
+.pregun-h2 {
+  color: #0542ae;
+  font-size: 20px;
+  padding: 30px;
+} */
+/* tabs component inside preguntas page */
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+  font-size: 1rem;
+  text-align: left;
+  color: var(--blue-dark);
+  background-color: var(--grey);
+  width: 100%;
+  padding: 18px 0px 18px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.active,
+.accordion:hover {
+  background-color: var(--blue-ex-light);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+  background-color: white;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 1rem;
+  padding-left: 25px;
+}
+.panel p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.pregun-accor {
+  padding: 5px;
+  width: 90vw;
+}
+
+.city {
+  background-color: var(--blue);
+}
+.w3-bar {
+  background-color: #0542ae;
+  padding: 10px 0px;
+  justify-content: center;
+  width: 90vw;
+}
+.w3-bar-item {
+  /* display: inline-block; */
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--blue);
+  border: none;
+  cursor: pointer;
+}
+.w3-bar-item:hover {
+  color: var(--blue-ex-light);
+  transition: 0.5s;
+}
+
+.w3-black {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #0542ae; */
+}
+/* End of tab section */
+/* End of Preguntas page */
